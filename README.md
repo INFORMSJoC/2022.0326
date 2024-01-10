@@ -1,6 +1,6 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# [Decomposable Formulation of Transmission Constraints for Decentralized Power Systems Optimization](https://doi.org/)
+# [Decomposable Formulation of Transmission Constraints for Decentralized Power Systems Optimization](https://doi.org/10.1287/ijoc.2022.0326)
 
 This archive is distributed in association with the [INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc) under the [BSD License](LICENSE).
 
@@ -10,14 +10,13 @@ This repository contains supporting material for the paper
 
 The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper.
 
-
 ## Cite
 
 To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
 
-https://doi.org/10.1287/ijoc.2019.0000
+https://doi.org/10.1287/ijoc.2022.0326
 
-https://doi.org/10.1287/ijoc.2019.0000.cd
+https://doi.org/10.1287/ijoc.2022.0326.cd
 
 Below is the BibTex for citing this snapshot of the respoitory.
 
@@ -27,8 +26,8 @@ Below is the BibTex for citing this snapshot of the respoitory.
   publisher =     {INFORMS Journal on Computing},
   title =         {Decomposable Formulation of Transmission Constraints for Decentralized Power Systems Optimization},
   year =          {2024},
-  doi =           {},
-  url =           {https://github.com/INFORMSJoC/},
+  doi =           {10.1287/ijoc.2022.0326},
+  url =           {https://github.com/INFORMSJoC/2022.0326},
 }
 ```
 
