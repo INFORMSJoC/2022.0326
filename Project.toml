@@ -1,0 +1,25 @@
+name = "Decomposition"
+uuid = "aaadf910-3a00-11e9-0a6d-6b2c9f21964f"
+authors = ["Alinson Santos Xavier <axavier@anl.gov>"]
+version = "0.1.0"
+
+[deps]
+ADMM = "8b15549e-3608-11e9-3cfd-df343ec171f3"
+CPLEX = "a076750e-1247-5638-91d2-ce28b192dca0"
+Dates = "ade2ca70-3891-5945-98fb-dc099432e06a"
+JLD = "4138dd39-2aa7-5051-a626-17a0bb65d9c8"
+JuMP = "4076af6c-e467-56ae-b986-b466b2749572"
+LinearAlgebra = "37e2e46d-f89d-539d-b4ee-838fcccc9c8e"
+Logging = "56ddb016-857b-54e1-b83d-db4d58db5568"
+MPI = "da04e1cc-30fd-572f-bb4f-1f8673147195"
+Printf = "de0858da-6303-5e67-8744-51eddeeeb8d7"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+TimerOutputs = "a759f4b9-e2f1-59dc-863e-4aeb61b1ea8f"
+UnitCommitment = "64606440-39ea-11e9-0f29-3303a1d3d877"
+
+[compat]
+ADMM = "1.0.0"
+CPLEX = "0.5.0"
+JuMP = "0.19.2"
+MPI = "0.10"
+TimerOutputs = "0.5"

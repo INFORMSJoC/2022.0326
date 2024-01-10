@@ -1,0 +1,6 @@
+instance,algorithm,demand,limit,transmission,security,obj,infeas,iterations,timetotal,timeit
+case1888rte-25b,isf,0.60,1.50,1,0,4.957049e+07,8.534e-03,53,212.04,4.00
+case1888rte-49b,isf,0.60,1.50,1,0,4.852539e+07,9.804e-03,62,290.88,4.69
+case1888rte-95b,isf,0.60,1.50,1,0,4.661293e+07,7.785e-03,135,2395.30,17.74
+case1888rte-136b,isf,0.60,1.50,1,0,4.544478e+07,6.039e-03,103,829.29,8.05
+case1888rte-172b,isf,0.60,1.50,1,0,4.308689e+07,9.842e-03,102,1202.72,11.79
