@@ -1,20 +1,15 @@
 [![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-# CacheTest
+# [Decomposable Formulation of Transmission Constraints for Decentralized Power Systems Optimization](https://doi.org/)
 
-This archive is distributed in association with the [INFORMS Journal on
-Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
+This archive is distributed in association with the [INFORMS Journal on Computing](https://pubsonline.informs.org/journal/ijoc) under the [BSD License](LICENSE).
 
-The software and data in this repository are a snapshot of the software and data
-that were used in the research reported on in the paper 
-[This is a Template](https://doi.org/10.1287/ijoc.2019.0000) by T. Ralphs. 
-The snapshot is based on 
-[this SHA](https://github.com/tkralphs/JoCTemplate/commit/f7f30c63adbcb0811e5a133e1def696b74f3ba15) 
-in the development repository. 
+This repository contains supporting material for the paper 
+ 
+    "Decomposable Formulation of Transmission Constraints for Decentralized Power Systems Optimization" by Álinson S. Xavier, Feng Qiu and Santanu S. Dey.
 
-**Important: This code is being developed on an on-going basis at 
-https://github.com/tkralphs/JoCTemplate. Please go there if you would like to
-get a more recent version or would like support**
+The software and data in this repository are a snapshot of the software and data that were used in the research reported on in the paper.
+
 
 ## Cite
 
@@ -27,80 +22,53 @@ https://doi.org/10.1287/ijoc.2019.0000.cd
 Below is the BibTex for citing this snapshot of the respoitory.
 
 ```
-@article{CacheTest,
-  author =        {T. Ralphs},
+@article{Xavier2024,
+  author =        {\'Alinson S. Xavier and Feng Qiu and Santanu S. Dey},
   publisher =     {INFORMS Journal on Computing},
-  title =         {{CacheTest}},
-  year =          {2020},
-  doi =           {10.1287/ijoc.2019.0000.cd},
-  url =           {https://github.com/INFORMSJoC/2019.0000},
-}  
+  title =         {Decomposable Formulation of Transmission Constraints for Decentralized Power Systems Optimization},
+  year =          {2024},
+  doi =           {},
+  url =           {https://github.com/INFORMSJoC/},
+}
 ```
+
 
 ## Description
 
-The goal of this software is to demonstrate the effect of cache optimization.
+One of the most complicating factors in decentralized solution methods for a broad range of power system optimization problems is the modeling of power flow equations. Existing formulations for direct current (DC) power flows either have limited scalability or are very dense and unstructured, making them unsuitable for large-scale decentralized studies. In this work, we present a novel sparsified variant of the injection shift factors formulation, which has a decomposable block-diagonal structure and scales well for large systems. We also propose a decentralized solution method, based on alternating direction multiplier method (ADMM), that efficiently handle transmission line outages in N-1 security requirements. Benchmarks on Multi-Zonal Security-Constrained Unit Commitment problems show that the proposed formulation and algorithm can reliably and efficiently solve interconnection-level test systems, with up to 6,515 buses, with no convergence or numerical issues.
 
-## Building
 
-In Linux, to build the version that multiplies all elements of a vector by a
-constant (used to obtain the results in [Figure 1](results/mult-test.png) in the
-paper), stepping K elements at a time, execute the following commands.
+## Requirements
 
-```
-make mult
-```
+The code was tested on Ubuntu Linux 20.04.3 LTS, with the following software:
 
-Alternatively, to build the version that sums the elements of a vector (used
-to obtain the results [Figure 2](results/sum-test.png) in the paper), stepping K
-elements at a time, do the following.
-
-```
-make clean
-make sum
-```
-
-Be sure to make clean before building a different version of the code.
-
-## Results
-
-Figure 1 in the paper shows the results of the multiplication test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/mult-test.png)
-
-Figure 2 in the paper shows the results of the sum test with different
-values of K using `gcc` 7.5 on an Ubuntu Linux box.
-
-![Figure 1](results/sum-test.png)
+- Julia 1.6.7
+- IBM® ILOG® CPLEX® Optimization Studio 12.9
+- MPICH 3.3.2
 
 ## Replicating
 
-To replicate the results in [Figure 1](results/mult-test), do either
+1. Install Julia, CPLEX and MPICH
 
-```
-make mult-test
-```
-or
-```
-python test.py mult
-```
-To replicate the results in [Figure 2](results/sum-test), do either
+2. Navigate to the project folder and initialize the project:
 
-```
-make sum-test
-```
-or
-```
-python test.py sum
-```
+    ```
+    cd Decomposition/
+    julia --project=.
+    ]dev deps/ADMM deps/unitcommitment.jl
+    ]build
+    ```
 
-## Ongoing Development
+3. Navigate to scripts and run the experiments:
 
-This code is being developed on an on-going basis at the author's
-[Github site](https://github.com/tkralphs/JoCTemplate).
+    ```
+    cd Decomposition/scripts/
+    ./run.sh all
+    ```
 
-## Support
+4. The raw results will be stored in `Decomposition/scripts/logs`
 
-For support in using this software, submit an
-[issue](https://github.com/tkralphs/JoCTemplate/issues/new).
+## License
+
+This software is released under the BSD license. See file 'LICENSE' for more information.
+

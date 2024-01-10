@@ -1,3 +1,1 @@
-# Data for replication
-
-Here is the data needed for replicating the experiments. 
+Data files are available in `deps/unitcommitment.jl/instances/decomposed`

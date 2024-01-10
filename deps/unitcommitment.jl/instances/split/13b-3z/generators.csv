@@ -1,0 +1,6 @@
+Unit,Min Power (MW),Max Power (MW),Ramp-Down Limit (MW),Ramp-Up Limit (MW),Shutdown Ramp Limit (MW),Startup Ramp Limit (MW),Initial State,Bus,Always On,Minimum Uptime (h),Minimum Downtime (h),Price Min Power ($),Price Segment 1 ($/MW),Price Segment 2 ($/MW),Price Segment 3 ($/MW),Offer Segment 1 (MW),Offer Segment 2 (MW),Offer Segment 3 (MW),Startup Cost ($)
+1,0,1000,1000,1000,1000,1000,1,1,0,4,4,0,2,0,0,1000,0,0,0
+2,0,1000,1000,1000,1000,1000,1,6,0,2,2,0,3,0,0,1000,0,0,0
+3,0,1000,1000,1000,1000,1000,1,7,0,1,1,0,5,0,0,1000,0,0,0
+4,0,1000,1000,1000,1000,1000,1,10,0,1,1,0,8,0,0,1000,0,0,0
+5,0,1000,1000,1000,1000,1000,1,12,0,1,1,0,10,0,0,1000,0,0,0
